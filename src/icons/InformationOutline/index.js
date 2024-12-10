@@ -1,0 +1,1 @@
+export { InformationOutline } from "./InformationOutline";

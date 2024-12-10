@@ -1,0 +1,12 @@
+.material-icon {
+    align-items: flex-start;
+    display: inline-flex;
+    position: relative;
+  }
+  
+  .material-icon .star {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  

@@ -1,0 +1,28 @@
+.logo {
+    align-items: center;
+    display: inline-flex;
+    gap: 4px;
+    height: 44px;
+    position: relative;
+  }
+  
+  .logo .movie-open {
+    align-self: stretch;
+    position: relative;
+    width: 50px;
+  }
+  
+  .logo .text-wrapper {
+    align-self: stretch;
+    color: var(--text-lightprimary);
+    font-family: "Londrina Solid", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 55.0px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 109px;
+  }

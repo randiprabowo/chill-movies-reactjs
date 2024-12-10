@@ -1,0 +1,110 @@
+.button {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .button .div {
+    position: relative;
+  }
+  
+  .button .material-icon-instance {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: 18px !important;
+  }
+  
+  .button .arrow-back {
+    height: 24px !important;
+    margin-left: -6.00px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  
+  .button .text-wrapper {
+    color: var(--text-darkprimary);
+    font-family: var(--body-medium-medium-bold-font-family);
+    font-size: var(--body-medium-medium-bold-font-size);
+    font-style: var(--body-medium-medium-bold-font-style);
+    font-weight: var(--body-medium-medium-bold-font-weight);
+    letter-spacing: var(--body-medium-medium-bold-letter-spacing);
+    line-height: var(--body-medium-medium-bold-line-height);
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .button .instance-node {
+    display: flex !important;
+    width: 18px !important;
+  }
+  
+  .button .arrow-forward {
+    height: 24px !important;
+    margin-right: -6.00px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  
+  .button.large {
+    padding: 12px 26px;
+  }
+  
+  .button.medium {
+    padding: 6px 22px;
+  }
+  
+  .button.left.medium {
+    width: 122px;
+  }
+  
+  .button.right.large {
+    width: 133px;
+  }
+  
+  .button.left.large {
+    width: 132px;
+  }
+  
+  .button.none.medium {
+    width: 99px;
+  }
+  
+  .button.right.medium {
+    width: 123px;
+  }
+  
+  .button.none.large {
+    width: 107px;
+  }
+  
+  .button.left .div {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+  }
+  
+  .button.none .div {
+    color: var(--text-darkprimary);
+    font-family: var(--body-medium-medium-bold-font-family);
+    font-size: var(--body-medium-medium-bold-font-size);
+    font-style: var(--body-medium-medium-bold-font-style);
+    font-weight: var(--body-medium-medium-bold-font-weight);
+    letter-spacing: var(--body-medium-medium-bold-letter-spacing);
+    line-height: var(--body-medium-medium-bold-line-height);
+    margin-top: -1.00px;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .button.right .div {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+  }
+  

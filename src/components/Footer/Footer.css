@@ -1,0 +1,249 @@
+.footer {
+    align-items: center;
+    background-color: var(--otherpage-header);
+    border-color: var(--otheroutline-border);
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .footer .frame-2 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer .frame-3 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .footer .hello-we-are-flair {
+    color: var(--text-lightsecondary);
+    font-family: "Poppins", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20.4px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .footer .frame-4 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 160px;
+    position: relative;
+  }
+  
+  .footer .frame-5 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .footer .text-wrapper-7 {
+    border-color: var(--text-lightprimary);
+    color: var(--text-lightprimary);
+    font-family: var(--body-medium-medium-bold-font-family);
+    font-size: var(--body-medium-medium-bold-font-size);
+    font-style: var(--body-medium-medium-bold-font-style);
+    font-weight: var(--body-medium-medium-bold-font-weight);
+    letter-spacing: var(--body-medium-medium-bold-letter-spacing);
+    line-height: var(--body-medium-medium-bold-line-height);
+    margin-left: -1.00px;
+    margin-top: -2.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .footer .frame-6 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 28px;
+    position: relative;
+  }
+  
+  .footer .frame-7 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 13px;
+    position: relative;
+  }
+  
+  .footer .text-wrapper-8 {
+    color: var(--text-lightsecondary);
+    font-family: var(--body-medium-medium-medium-font-family);
+    font-size: var(--body-medium-medium-medium-font-size);
+    font-style: var(--body-medium-medium-medium-font-style);
+    font-weight: var(--body-medium-medium-medium-font-weight);
+    letter-spacing: var(--body-medium-medium-medium-letter-spacing);
+    line-height: var(--body-medium-medium-medium-line-height);
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .footer .text-wrapper-9 {
+    color: var(--text-lightsecondary);
+    font-family: var(--body-medium-medium-medium-font-family);
+    font-size: var(--body-medium-medium-medium-font-size);
+    font-style: var(--body-medium-medium-medium-font-style);
+    font-weight: var(--body-medium-medium-medium-font-weight);
+    letter-spacing: var(--body-medium-medium-medium-letter-spacing);
+    line-height: var(--body-medium-medium-medium-line-height);
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .footer .frame-wrapper {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer .frame-8 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer .logo-3 {
+    align-items: center;
+    display: inline-flex;
+    gap: 3px;
+    height: 24.75px;
+    position: relative;
+  }
+  
+  .footer .movie-open-3 {
+    height: 25px;
+    margin-bottom: -0.12px;
+    margin-top: -0.12px;
+    position: relative;
+    width: 28px;
+  }
+  
+  .footer .text-wrapper-10 {
+    color: var(--text-lightprimary);
+    font-family: "Londrina Solid", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    margin-top: -1.38px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .footer .hello-we-are-flair-wrapper {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer .p {
+    align-self: stretch;
+    color: var(--text-lightsecondary);
+    font-family: var(--caption-1-caption-1-regular-font-family);
+    font-size: var(--caption-1-caption-1-regular-font-size);
+    font-style: var(--caption-1-caption-1-regular-font-style);
+    font-weight: var(--caption-1-caption-1-regular-font-weight);
+    letter-spacing: var(--caption-1-caption-1-regular-letter-spacing);
+    line-height: var(--caption-1-caption-1-regular-line-height);
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .footer .frame-9 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .footer .frame-10 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 320px;
+  }
+  
+  .footer .text-wrapper-11 {
+    border-color: var(--text-lightprimary);
+    color: var(--text-lightprimary);
+    font-family: var(--body-medium-medium-medium-font-family);
+    font-size: var(--body-medium-medium-medium-font-size);
+    font-style: var(--body-medium-medium-medium-font-style);
+    font-weight: var(--body-medium-medium-medium-font-weight);
+    letter-spacing: var(--body-medium-medium-medium-letter-spacing);
+    line-height: var(--body-medium-medium-medium-line-height);
+    margin-left: -1.00px;
+    margin-top: -2.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .footer .chevron-right {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .footer.type-5-web {
+    gap: 20px;
+    padding: 60px 80px;
+    width: 1440px;
+  }
+  
+  .footer.type-5-mobile {
+    gap: 40px;
+    padding: 20px;
+    width: 360px;
+  }
+  

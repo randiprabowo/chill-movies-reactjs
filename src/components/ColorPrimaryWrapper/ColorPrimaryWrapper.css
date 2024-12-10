@@ -1,0 +1,74 @@
+.color-primary-wrapper {
+    align-items: center;
+    border-radius: 48px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .color-primary-wrapper .class {
+    color: var(--primarydefault) !important;
+  }
+  
+  .color-primary-wrapper .class-2 {
+    color: var(--text-darkdisabled) !important;
+  }
+  
+  .color-primary-wrapper .class-3 {
+    color: var(--otherbody) !important;
+  }
+  
+  .color-primary-wrapper .class-4 {
+    color: var(--text-lightprimary) !important;
+  }
+  
+  .color-primary-wrapper .button-unstyledbutton {
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    padding: 10px 26px !important;
+    width: unset !important;
+  }
+  
+  .color-primary-wrapper.outlined {
+    border: 1px solid;
+  }
+  
+  .color-primary-wrapper.primary.contained {
+    background-color: var(--primary-400);
+  }
+  
+  .color-primary-wrapper.primary.shadow {
+    background-color: var(--primary-200);
+  }
+  
+  .color-primary-wrapper.secondary.contained {
+    background-color: var(--otherbody);
+  }
+  
+  .color-primary-wrapper.secondary.outlined {
+    border-color: var(--otherbody);
+  }
+  
+  .color-primary-wrapper.disabled.contained {
+    background-color: var(--greyscale-400);
+  }
+  
+  .color-primary-wrapper.disabled.shadow {
+    background-color: var(--greyscale-300);
+  }
+  
+  .color-primary-wrapper.disabled.outlined {
+    background-color: var(--greyscale-200);
+    border-color: var(--text-darkdisabled);
+  }
+  
+  .color-primary-wrapper.secondary.shadow {
+    background-color: var(--otherinput-field-bg);
+  }
+  
+  .color-primary-wrapper.primary.outlined {
+    border-color: var(--primarydefault);
+  }
+  

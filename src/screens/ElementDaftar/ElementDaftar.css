@@ -1,0 +1,422 @@
+.element-daftar {
+    background-color: #0000004c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .element-daftar .frame-wrapper {
+    background-image: url('../src/asset/Daftar.png');
+    background-color: #0000004c;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .element-daftar .frame {
+    align-items: center;
+    background-color: #181a1cd6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    width: 90%;
+    max-width: 529px;
+    margin: 181px auto 0;
+  }
+  
+  .element-daftar .div {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .element-daftar .text-wrapper-2 {
+    color: var(--text-lightprimary);
+    font-family: var(--heading-heading-3-font-family);
+    font-size: var(--heading-heading-3-font-size);
+    font-style: var(--heading-heading-3-font-style);
+    font-weight: var(--heading-heading-3-font-weight);
+    letter-spacing: var(--heading-heading-3-letter-spacing);
+    line-height: var(--heading-heading-3-line-height);
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .element-daftar .text-wrapper-3 {
+    color: var(--text-lightprimary);
+    font-family: var(--body-medium-medium-regular-font-family);
+    font-size: var(--body-medium-medium-regular-font-size);
+    font-style: var(--body-medium-medium-regular-font-style);
+    font-weight: var(--body-medium-medium-regular-font-weight);
+    letter-spacing: var(--body-medium-medium-regular-letter-spacing);
+    line-height: var(--body-medium-medium-regular-line-height);
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .element-daftar .frame-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .div-wrapper {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .element-daftar .text-wrapper-4 {
+    color: var(--text-lightprimary);
+    font-family: var(--body-large-large-medium-font-family);
+    font-size: var(--body-large-large-medium-font-size);
+    font-style: var(--body-large-large-medium-font-style);
+    font-weight: var(--body-large-large-medium-font-weight);
+    letter-spacing: var(--body-large-large-medium-letter-spacing);
+    line-height: var(--body-large-large-medium-line-height);
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .element-daftar .frame-3 {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--otheroutline-border);
+    border-radius: 24px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    padding: 14px 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .text-wrapper-5 {
+    color: #ffffff;
+    font-family: var(--body-medium-medium-regular-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .element-daftar .password {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+  
+  .element-daftar .frame-4 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    width: 441px;
+  }
+  
+  .element-daftar .frame-5 {
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--otheroutline-border);
+    border-radius: 24px;
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    padding: 14px 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .text-wrapper-6 {
+    color: #ffffff;
+    font-family: var(--body-medium-medium-regular-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .element-daftar .eye-off {
+    height: 20px;
+    margin-bottom: -0.50px;
+    margin-top: -0.50px;
+    position: relative;
+    width: 20px;
+  }
+  
+  .element-daftar .password-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .frame-6 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 141px;
+    position: relative;
+  }
+  
+  .element-daftar .sudah-punya-akun-wrapper {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 6px;
+    position: relative;
+  }
+  
+  .element-daftar .sudah-punya-akun {
+    color: transparent;
+    font-family: "Lato", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.20px;
+    line-height: 22.4px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .element-daftar .span {
+    color: #c1c2c4;
+    font-family: var(--body-medium-medium-regular-font-family);
+    font-size: var(--body-medium-medium-regular-font-size);
+    font-style: var(--body-medium-medium-regular-font-style);
+    font-weight: var(--body-medium-medium-regular-font-weight);
+    letter-spacing: var(--body-medium-medium-regular-letter-spacing);
+    line-height: var(--body-medium-medium-regular-line-height);
+  }
+  
+  .element-daftar .text-wrapper-7 {
+    color: #c1c2c4;
+    font-family: var(--body-small-small-regular-font-family);
+    font-size: var(--body-small-small-regular-font-size);
+    font-style: var(--body-small-small-regular-font-style);
+    font-weight: var(--body-small-small-regular-font-weight);
+    letter-spacing: var(--body-small-small-regular-letter-spacing);
+    line-height: var(--body-small-small-regular-line-height);
+  }
+  
+  .element-daftar .text-wrapper-8 {
+    color: #ffffff;
+    font-family: var(--body-medium-medium-medium-font-family);
+    font-size: var(--body-medium-medium-medium-font-size);
+    font-style: var(--body-medium-medium-medium-font-style);
+    font-weight: var(--body-medium-medium-medium-font-weight);
+    letter-spacing: var(--body-medium-medium-medium-letter-spacing);
+    line-height: var(--body-medium-medium-medium-line-height);
+  }
+  
+  .element-daftar .button {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .button-sign-in {
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--otherextra);
+    border: 1px solid;
+    border-color: var(--otheroutline-border);
+    border-radius: 24px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 14px 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .text-wrapper-9 {
+    color: var(--text-lightprimary);
+    font-family: var(--body-medium-medium-semibold-font-family);
+    font-size: var(--body-medium-medium-semibold-font-size);
+    font-style: var(--body-medium-medium-semibold-font-style);
+    font-weight: var(--body-medium-medium-semibold-font-weight);
+    letter-spacing: var(--body-medium-medium-semibold-letter-spacing);
+    line-height: var(--body-medium-medium-semibold-line-height);
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .element-daftar .text-wrapper-10 {
+    color: var(--text-lightdisabled);
+    font-family: var(--body-small-small-medium-font-family);
+    font-size: var(--body-small-small-medium-font-size);
+    font-style: var(--body-small-small-medium-font-style);
+    font-weight: var(--body-small-small-medium-font-weight);
+    letter-spacing: var(--body-small-small-medium-letter-spacing);
+    line-height: var(--body-small-small-medium-line-height);
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .element-daftar .button-sign-in-2 {
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--otheroutline-border);
+    border-radius: 24px;
+    display: flex;
+    gap: 20px;
+    height: 47px;
+    justify-content: center;
+    padding: 14px 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .element-daftar .element {
+    height: 18px;
+    object-fit: cover;
+    position: relative;
+    width: 18px;
+  }
+  
+  .element-daftar .text-wrapper-11 {
+    color: var(--text-lightprimary);
+    font-family: var(--body-medium-medium-semibold-font-family);
+    font-size: var(--body-medium-medium-semibold-font-size);
+    font-style: var(--body-medium-medium-semibold-font-style);
+    font-weight: var(--body-medium-medium-semibold-font-weight);
+    letter-spacing: var(--body-medium-medium-semibold-letter-spacing);
+    line-height: var(--body-medium-medium-semibold-line-height);
+    margin-bottom: -0.50px;
+    margin-top: -2.50px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .element-daftar .frame {
+      padding: 30px;
+      gap: 25px;
+    }
+  
+    .element-daftar .text-wrapper-2 {
+      font-size: calc(var(--heading-heading-3-font-size) * 0.9);
+    }
+  
+    .element-daftar .text-wrapper-3,
+    .element-daftar .text-wrapper-4,
+    .element-daftar .text-wrapper-5,
+    .element-daftar .text-wrapper-6 {
+      font-size: calc(var(--body-medium-medium-regular-font-size) * 0.9);
+    }
+  
+    .element-daftar .frame-6 {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .element-daftar .frame {
+      padding: 20px;
+      gap: 20px;
+      margin: 30px auto;
+    }
+  
+    .element-daftar .text-wrapper-2 {
+      font-size: calc(var(--heading-heading-3-font-size) * 0.8);
+    }
+  
+    .element-daftar .text-wrapper-3,
+    .element-daftar .text-wrapper-4,
+    .element-daftar .text-wrapper-5,
+    .element-daftar .text-wrapper-6 {
+      font-size: calc(var(--body-medium-medium-regular-font-size) * 0.8);
+    }
+  
+    .element-daftar .button-sign-in,
+    .element-daftar .button-sign-in-2 {
+      padding: 10px 15px;
+    }
+  
+    .element-daftar .eye-off {
+      height: 16px;
+      width: 16px;
+    }
+  
+    .element-daftar .frame-6 {
+      gap: 10px;
+    }
+  }

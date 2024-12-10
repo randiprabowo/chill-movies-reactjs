@@ -1,0 +1,1 @@
+export { ColorPrimaryWrapper } from "./ColorPrimaryWrapper";
