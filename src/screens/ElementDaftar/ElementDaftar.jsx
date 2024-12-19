@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Logo } from "../../components/Logo";
 import "./ElementDaftar.css";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { BASE_URL, endpoints } from '../../api/config';
 
 export const ElementDaftar = () => {
   // State untuk form input
@@ -17,6 +19,21 @@ export const ElementDaftar = () => {
   // State untuk mengontrol visibility password
   const [showPassword, setShowPassword] = useState(false);
   
+  // Ambil data users saat komponen dimount
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
+  // Fungsi untuk mengambil data dari API
+  const fetchUsers = async () => {
+    try {
+      const response = await axios.get(endpoints.users);
+      setUsers(response.data);
+    } catch (error) {
+      console.error("Error fetching users:", error);
+    }
+  };
+
   // Handle perubahan input
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,35 +44,52 @@ export const ElementDaftar = () => {
   };
 
   // Tambah user baru
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
       alert("Kata sandi tidak cocok!");
       return;
     }
-    
-    const newUser = {
-      id: Date.now(),
-      username: formData.username,
-      password: formData.password
-    };
-    
-    setUsers(prevUsers => [...prevUsers, newUser]);
-    setFormData({ username: "", password: "", confirmPassword: "" });
+
+    try {
+      const newUser = {
+        username: formData.username,
+        password: formData.password
+      };
+
+      const response = await axios.post(endpoints.users, newUser);
+      setUsers(prevUsers => [...prevUsers, response.data]);
+      setFormData({ username: "", password: "", confirmPassword: "" });
+      alert("Pendaftaran berhasil!");
+      goToPage('/');
+    } catch (error) {
+      console.error("Error creating user:", error);
+      alert("Gagal mendaftar. Silakan coba lagi.");
+    }
   };
 
   // Hapus user
-  const deleteUser = (userId) => {
-    setUsers(prevUsers => prevUsers.filter(user => user.id !== userId));
+  const deleteUser = async (userId) => {
+    try {
+      await axios.delete(endpoints.user(userId));
+      setUsers(prevUsers => prevUsers.filter(user => user.id !== userId));
+    } catch (error) {
+      console.error("Error deleting user:", error);
+    }
   };
 
   // Update user
-  const updateUser = (userId, updatedData) => {
-    setUsers(prevUsers => 
-      prevUsers.map(user => 
-        user.id === userId ? { ...user, ...updatedData } : user
-      )
-    );
+  const updateUser = async (userId, updatedData) => {
+    try {
+      const response = await axios.put(endpoints.user(userId), updatedData);
+      setUsers(prevUsers => 
+        prevUsers.map(user => 
+          user.id === userId ? response.data : user
+        )
+      );
+    } catch (error) {
+      console.error("Error updating user:", error);
+    }
   };
 
   const navigate = useNavigate();

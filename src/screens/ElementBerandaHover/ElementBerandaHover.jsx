@@ -1,27 +1,47 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { ColorPrimaryWrapper } from "../../components/ColorPrimaryWrapper";
-import { Component } from "../../components/Component";
+import { Component } from '/src/components/Component';
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 import { NumberWrapper } from "../../components/NumberWrapper";
 import { ArrowLeft4 } from "../../icons/ArrowLeft4";
 import { ArrowRight4 } from "../../icons/ArrowRight4";
 import { InformationOutline } from "../../icons/InformationOutline";
+import { getUser } from "../../api/config";
 import "./ElementBerandaHover.css";
 
-
-export const ElementBerandaHover = () => {
+const ElementBerandaHover = () => {
   // State untuk dropdown profil
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(true);
   
   // State untuk slider
   const [currentSlide, setCurrentSlide] = useState(0);
   
   // Refs untuk slider containers
   const continueWatchingRef = useRef(null);
-  const topRatedRef = useRef(null);
-  const trendingRef = useRef(null);
-  const newReleasesRef = useRef(null);
+  const popularThisWeekRef = useRef(null);
+  const topRatedThisWeekRef = useRef(null);
+
+  // State untuk menyimpan data profile
+
+  const [profile, setProfile] = useState(null);
+
+  useEffect(() => {
+    const getProfileData = async () => {
+      try {
+        const data = await getUser('userId'); // Replace 'userId' with actual user ID
+        setProfile(data);
+      } catch (error) {
+        console.error('Failed to fetch profile:', error);
+      }
+    };
+    getProfileData();
+  }, []);
+
+  // Example useEffect hook with dependency array
+  useEffect(() => {
+    // Your effect logic here
+  }, [currentSlide]);
 
   // Fungsi untuk menggeser slider
   const slideHandler = (direction, ref) => {
@@ -92,6 +112,11 @@ export const ElementBerandaHover = () => {
             className="navbar-instance"
             movieOpen="https://c.animaapp.com/4gYTn61Z/img/movie-open-4.svg"
             type="web"
+            profile={{
+              username: profile?.username,
+              email: profile?.email,
+              avatar: profile?.avatar,
+            }}
             onProfileClick={() => setShowDropdown(!showDropdown)}
           />
           {showDropdown && (
@@ -126,6 +151,15 @@ export const ElementBerandaHover = () => {
                 <div className="text-wrapper-16">Keluar</div>
               </div>
             </div>
+          )}
+          {profile ? (
+            <div>
+              <h1>{profile.name}</h1>
+              <p>{profile.email}</p>
+              <p>{profile.bio}</p>
+            </div>
+          ) : (
+            <p>Loading...</p>
           )}
         </div>
 
@@ -442,3 +476,5 @@ export const ElementBerandaHover = () => {
     </div>
   );
 };
+
+export default ElementBerandaHover;

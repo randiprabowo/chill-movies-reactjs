@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Logo } from "../../components/Logo";
 import "./ElementMasuk.css";
 import { useNavigate } from 'react-router-dom';
+import { API } from "../../api/config";
 
 
 export const ElementMasuk = () => {
@@ -16,29 +17,56 @@ export const ElementMasuk = () => {
     { id: 1, username: "user1", password: "pass123" }
   ]);
 
-  // Fungsi untuk menambah user baru
-  const handleSubmit = (e) => {
+  // Modifikasi handleSubmit untuk menggunakan mockAPI
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const newUser = {
-      id: users.length + 1,
-      username: username,
-      password: password
-    };
-    setUsers([...users, newUser]);
-    setUsername("");
-    setPassword("");
+    try {
+      // Menggunakan endpoint users dari mockAPI
+      const response = await API.get('/users', {
+        params: {
+          username: username
+        }
+      });
+
+      const user = response.data.find(user => 
+        user.username === username && user.password === password
+      );
+
+      if (user) {
+        // Simpan data user ke localStorage
+        localStorage.setItem('user', JSON.stringify(user));
+        goToPage('/ElementBerandaHover');
+      } else {
+        alert('Username atau password salah!');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Terjadi kesalahan saat login');
+    }
   };
 
-  // Fungsi untuk update user
-  const handleUpdate = (id, updatedData) => {
-    setUsers(users.map(user => 
-      user.id === id ? { ...user, ...updatedData } : user
-    ));
+  // Fungsi CRUD untuk update user
+  const handleUpdate = async (id, updatedData) => {
+    try {
+      const response = await API.put(`/users/${id}`, updatedData);
+      setUsers(users.map(user => 
+        user.id === id ? response.data : user
+      ));
+    } catch (error) {
+      console.error('Error updating user:', error);
+      alert('Gagal memperbarui data pengguna');
+    }
   };
 
-  // eslint-disable-next-line no-unused-vars
-  const handleDelete = (id) => {
-    setUsers(users.filter(user => user.id !== id));
+  // Fungsi CRUD untuk delete user
+  const handleDelete = async (id) => {
+    try {
+      await API.delete(`/users/${id}`);
+      setUsers(users.filter(user => user.id !== id));
+    } catch (error) {
+      console.error('Error deleting user:', error);
+      alert('Gagal menghapus data pengguna');
+    }
   };
 
     const navigate = useNavigate();
@@ -110,7 +138,13 @@ export const ElementMasuk = () => {
 
           <div className="button">
             <div className="button-sign-in">
-              <div className="text-wrapper-10" onClick={() => goToPage('/ElementBerandaHover')} style={{ cursor: 'pointer' }}>Masuk</div>
+              <button 
+                className="text-wrapper-10" 
+                type="submit"
+                style={{ cursor: 'pointer', background: 'none', border: 'none' }}
+              >
+                Masuk
+              </button>
             </div>
 
             <div className="text-wrapper-11">Atau</div>

@@ -1,1 +1,2 @@
-export { ElementBerandaHover } from "./ElementBerandaHover";
+export { default as ElementBerandaHover } from '/src/screens/ElementBerandaHover/ElementBerandaHover';
+
